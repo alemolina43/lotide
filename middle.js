@@ -21,7 +21,8 @@ const middle = function(arr) {
     result.push(arr[arr.length / 2]);
     return result;
   } else {
-    return result.push(arr[Math.floor(arr.length / 2)]);
+    result.push(arr[Math.floor(arr.length / 2)]);
+    return result;
   }
 };
 
