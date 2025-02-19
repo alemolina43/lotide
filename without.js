@@ -31,13 +31,16 @@ const without = function(source, itemsRemoved) {
 
 
 //test code
-const words = ["hello", "world", "lighthouse"];
-console.log(without(words, ["lighthouse"]));
 
-console.log(without([1, 2, 3], [1])); // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
-console.log(without(["Hello"], ["Hello"]));
-console.log(without(["Hello", "World", "Lighthouse"], ["Hello", "Lighthouse"]));
+
+
+assertArraysEqual(without(["Hello"], ["Hello"]), []); //should pass
+assertArraysEqual(without(["Hello", "World", "Lighthouse"], ["Hello", "Lighthouse"]), ["World"]); //should pass
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => should PASS
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["3", "4"]); //should fail
 
 // Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]);
+assertArraysEqual(words, ["hello", "world", "lighthouse"]); //should pass
+
