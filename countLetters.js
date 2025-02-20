@@ -15,13 +15,15 @@ const countLetters = function(sentence) {
   const results = {};
 
   for (const letter of sentence) {
+    if (letter !== " ") {
     // does this key value exist if not make it 0(initial value)
-    if (!results[letter]) {
-      results[letter] = 0;
-    }
+      if (!results[letter]) {
+        results[letter] = 0;
+      }
 
-    //happy path - increment the value
-    results[letter] += 1;
+      //happy path - increment the value
+      results[letter] += 1;
+    }
   }
   
   return results;
