@@ -20,9 +20,9 @@ const takeUntil = function(array, callback) {
     if (callback(word)) {
       return results; //stop looping one the condition is met
     }
-    results.push(word); //add the words to the array
+    results.push(word); //add elements to the results array
   }
-  return results; //if the condiiton is not met return all the elements in the original array
+  return results; //if the condition is not met return all the elements in the original array
 };
 
 

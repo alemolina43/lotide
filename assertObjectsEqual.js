@@ -52,6 +52,7 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 
+//TEST CODE
 const firstObj = {
   name: ["Ale", "Mike"],
   title: "parents"
@@ -71,5 +72,5 @@ const secondOtherObj = {
   name: ["Lorena", "Peter"],
   title: "parents"
 };
-assertObjectsEqual(firstObj, secondOnj);
-assertObjectsEqual(otherObj, secondOtherObj);
+assertObjectsEqual(firstObj, secondOnj); //should PASS
+assertObjectsEqual(otherObj, secondOtherObj); //should FAIL
