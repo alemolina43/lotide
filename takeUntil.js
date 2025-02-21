@@ -15,13 +15,14 @@ const assertArraysEqual = function(firstArr, secondArr) {
 
 const takeUntil = function(array, callback) {
   const results = [];
+  //iterate though the array until the condition of the call back funtoon is met
   for (let word of array) {
     if (callback(word)) {
-      return results;
+      return results; //stop looping one the condition is met
     }
-    results.push(word);
+    results.push(word); //add the words to the array
   }
-  return results;
+  return results; //if the condiiton is not met return all the elements in the original array
 };
 
 
