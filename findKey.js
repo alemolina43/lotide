@@ -35,3 +35,6 @@ assertEqual(
     },
     (x) => x.color === "red"
   ), undefined);
+
+
+module.exports = findKey;

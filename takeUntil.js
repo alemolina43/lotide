@@ -39,3 +39,6 @@ console.log(results2);
 assertArraysEqual(takeUntil(data2, x => x === ","), ["I've", "been", "to", "Hollywood"]);// should PASS
 
 assertArraysEqual(takeUntil(["testing", "my", "function"], x => x.length < 3), ['testing']); //should PASS
+
+
+module.exports = takeUntil;

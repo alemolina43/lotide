@@ -35,3 +35,6 @@ console.log(countLetters("")); // 0
 assertEqual(countLetters("LHL")["L"], 2); //should PASS
 assertEqual(countLetters("I love coding")["o"], 4); //should FAIL
 assertEqual(Object.keys(countLetters("")).length, 0); //should PASS
+
+
+module.exports = countLetters;

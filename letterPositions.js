@@ -34,3 +34,6 @@ assertArraysEqual(Object.keys(letterPositions("")).length, 0); //should PASS
 assertArraysEqual(letterPositions("hello").e, [1]); //should PASS
 assertArraysEqual(letterPositions("How are you").o, [1, 9]); //should PASS
 assertArraysEqual(letterPositions("Hi").i, [3]); //should FAIL
+
+
+module.exports = letterPositions;

@@ -74,3 +74,5 @@ const secondOtherObj = {
 };
 assertObjectsEqual(firstObj, secondOnj); //should PASS
 assertObjectsEqual(otherObj, secondOtherObj); //should FAIL
+
+module.exports = assertObjectsEqual;

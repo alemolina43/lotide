@@ -35,3 +35,6 @@ console.log(results1);
 const secondArr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 assertArraysEqual(map(secondArr, (word => word.length)), [6, 7, 9, 8, 6]); //Should PASS
 assertArraysEqual(map(words, (word) => word), ['ground', 'control', 'at', 'major', 'tom']); //should FAIL
+
+
+module.exports = map;
