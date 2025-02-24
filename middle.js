@@ -1,16 +1,4 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) return false;
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  } return true;
-};
-
-const assertArraysEqual = function(firstArr, secondArr) {
-  return eqArrays(firstArr, secondArr) ? console.log(`✅✅✅ Assertion Passed: ${firstArr} === ${secondArr}`) : console.log(`🛑🛑🛑 Assertion Failed: ${firstArr} !== ${secondArr}`);
-};
+//returns the number in the middle of an array, if the array has even values it returns the 2 that are in the middle, if it is empty or contains only 2 elements, it returns empty
 
 const middle = function(arr) {
   let result = [];
@@ -27,18 +15,4 @@ const middle = function(arr) {
 };
 
 
-
-// test code
-
-console.log(middle([1])); // => []
-console.log(middle([1, 2])); // => []
-console.log(middle([1, 2, 3, 4])); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
-
-assertArraysEqual(middle([1]), []); //should PASS
-assertArraysEqual(middle([1, 2, 3, 4]), [1, 4]); //should FAIL
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); //should PASS
-
-const origArr = [1, 2, 3, 4, 5, 6, 7];
-middle(origArr);
-console.log(origArr);
+module.exports = middle;
