@@ -1,4 +1,3 @@
-const eqArrays = require("../eqArrays");
 const assertArraysEqual = require("../assertArraysEqual");
 const middle = require("../middle");
 
@@ -6,10 +5,10 @@ const middle = require("../middle");
 
 // test code
 
-console.log(middle([1])); // => [] since there is no values it returns empty
-console.log(middle([1, 2])); // => [] if the arrays has to values it should return empty
-console.log(middle([1, 2, 3, 4])); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
+
+assertArraysEqual(middle([1, 2]), []); // => [] if the arrays has to values it should return empty
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [should pass
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => should pass
 
 assertArraysEqual(middle([1]), []); //should PASS
 assertArraysEqual(middle([1, 2, 3, 4]), [1, 4]); //should FAIL
