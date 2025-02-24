@@ -17,4 +17,11 @@ describe("#middle", () => {
   it("returns [] for []", () => {
     assert.deepEqual(middle([]), []);
   });
+
+  it("make sure the original array was not altered by the middle function", () => {
+    const words = ["hello", "world", "lighthouse"];
+    const result = middle(words);
+    assert.deepEqual(result, ["world"]);
+    assert.strictEqual(words.length, 3);
+  });
 });
