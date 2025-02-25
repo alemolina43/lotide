@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@ale_molina43/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A collection of JavaScript utility functions for testing, array manipulation, and object operations.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/alemolina43/lotide.git"
   },
-  "author": "",
+  "author": "Alejandra Gutierrez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alemolina43/lotide/issues"
